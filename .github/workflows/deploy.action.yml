@@ -28,7 +28,7 @@ jobs:
           scope: "@jpbbot"
 
       - name: Install Dependencies
-        run: npm install --also=dev
+        run: yarn install
 
       - name: Publish Library
         run: NODE_AUTH_TOKEN=${{secrets.GITHUB_TOKEN}} npx lerna publish --yes
